@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Paws & Tails Dog Care</title>
+  <meta name="description" content="Get in touch to book services, ask questions, or request a tour of our facilities." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-semibold font-[Poppins]">Paws & Tails</a>
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-6">
+          <a href="index.html" class="text-sm font-medium hover:text-yellow-500">Home</a>
+          <a href="about.html" class="text-sm font-medium hover:text-yellow-500">About</a>
+          <a href="services.html" class="text-sm font-medium hover:text-yellow-500">Services</a>
+          <a href="contact.html" class="text-sm font-medium hover:text-yellow-500">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-b border-gray-200">
+      <a href="index.html" class="block px-4 py-2 text-sm">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-sm">About</a>
+      <a href="services.html" class="block px-4 py-2 text-sm">Services</a>
+      <a href="contact.html" class="block px-4 py-2 text-sm">Contact</a>
+    </div>
+  </nav>
+
+  <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('https://pixabay.com/get/g19cb132519933473c06f2e2eb7405c69e079b539e15766ada3edde7c11a392ad18daed5d3d144c9b9eb076d42cd34e0c5390b42cc39e95ae52937802896cf841_640.jpg');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 flex items-center justify-center min-h-screen px-4">
+      <div class="text-center text-white max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold font-[Poppins] mb-4">Contact Us</h1>
+        <p class="text-lg md:text-xl font-[Open Sans] mb-6">Have questions or want to book a visit? We’re here to help.</p>
+      </div>
+    </div>
+  </section>
+
+  <main class="my-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      <section>
+        <h2 class="text-2xl font-bold font-[Poppins] mb-4">Send a Message</h2>
+        <form id="contact-form" class="space-y-4" autocomplete="on" novalidate>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="name">Your Name</label>
+            <input id="name" name="name" type="text" required class="w-full border border-gray-300 rounded-md p-3" placeholder="Jane Doe">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="email">Email</label>
+            <input id="email" name="email" type="email" required class="w-full border border-gray-300 rounded-md p-3" placeholder="you@example.com">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="dog-name">Dog's Name</label>
+            <input id="dog-name" name="dog-name" type="text" class="w-full border border-gray-300 rounded-md p-3" placeholder="Buddy">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="service">Service Interest</label>
+            <select id="service" name="service" class="w-full border border-gray-300 rounded-md p-3">
+              <option>General Inquiry</option>
+              <option>Dog Walking</option>
+              <option>Grooming</option>
+              <option>Daycare</option>
+              <option>Training</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" class="w-full border border-gray-300 rounded-md p-3">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full border border-gray-300 rounded-md p-3" placeholder="Tell us about your dog's needs..."></textarea>
+          </div>
+          <button type="submit" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300">Send Message</button>
+        </form>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold font-[Poppins] mb-4">Our Location & Details</h2>
+        <p class="mb-4 text-gray-700">Visit our warm, welcoming facility for dog care services and tours by appointment.</p>
+        <img src="https://pixabay.com/get/gcaf0277bedf8ca3cd4dc44f4ea22db925a0ecabeea97c441759818062e9c4ee2143fdd63786cd09207983e439667f2e5_640.jpg" alt="Reception area with dogs and staff" class="w-full rounded-md shadow" />
+        <div class="mt-4 text-sm text-gray-600">Address: 123 Bark Street, Dog City | Hours: Mon-Fri 7am-7pm</div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h4 class="font-semibold font-[Poppins] mb-2">Paws & Tails</h4>
+        <p class="text-sm text-gray-300">We’re here to help with your dog’s care every day.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold font-[Poppins] mb-2">Contact</h4>
+        <p class="text-sm text-gray-300">hello@pawstails.example</p>
+        <p class="text-sm text-gray-300">(555) 555-0123</p>
+      </div>
+      <div>
+        <h4 class="font-semibold font-[Poppins] mb-2">Visit Us</h4>
+        <p class="text-sm text-gray-300">123 Bark Street, Dog City</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+      // Basic form submission feedback (demo)
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const btnSubmit = form.querySelector('button[type="submit"]');
+          if (btnSubmit) {
+            btnSubmit.disabled = true;
+            btnSubmit.textContent = 'Sending...';
+            setTimeout(() => {
+              btnSubmit.textContent = 'Send Message';
+              btnSubmit.disabled = false;
+              alert('Thank you! Your message has been received.');
+              form.reset();
+            }, 1200);
+          }
+        });
+      }
+
+      // Section fade-in on load
+      document.querySelectorAll('section, article, form').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(12px)';
+        el.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out';
+        setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, 100);
+      });
+    });
+  </script>
+</body>
+</html>
