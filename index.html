@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws & Tails Dog Care | Home</title>
+  <meta name="description" content="Caring, reliable dog care services: walks, grooming, daycare, and training for happy, healthy dogs." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Open Sans', 'ui-sans-serif'],
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="text-2xl font-semibold font-[Poppins]">Paws & Tails</a>
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-6">
+          <a href="index.html" class="text-sm font-medium hover:text-yellow-500">Home</a>
+          <a href="about.html" class="text-sm font-medium hover:text-yellow-500">About</a>
+          <a href="services.html" class="text-sm font-medium hover:text-yellow-500">Services</a>
+          <a href="contact.html" class="text-sm font-medium hover:text-yellow-500">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-button" class="p-2 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none" aria-label="Open menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-b border-gray-200">
+      <a href="index.html" class="block px-4 py-2 text-sm">Home</a>
+      <a href="about.html" class="block px-4 py-2 text-sm">About</a>
+      <a href="services.html" class="block px-4 py-2 text-sm">Services</a>
+      <a href="contact.html" class="block px-4 py-2 text-sm">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/8499230/pexels-photo-8499230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative z-10 flex items-center justify-center min-h-screen px-4">
+      <div class="text-center text-white max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold font-[Poppins] mb-4">Caring for your canine companion</h1>
+        <p class="text-lg md:text-xl font-[Open Sans] mb-6">Reliable walks, grooming, daycare, and training to keep tails wagging and dogs thriving.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="services.html" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300">Explore Services</a>
+          <a href="contact.html" class="bg-transparent border border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl mb-3" aria-label="Walking dogs">🐾</div>
+          <h3 class="font-[Poppins] text-xl mb-2">Walking & Exercise</h3>
+          <p class="font-[Open Sans] text-gray-700">Balanced, safe routes with GPS check-ins and flexible scheduling.</p>
+        </article>
+        <article class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl mb-3" aria-label="Grooming">✂️</div>
+          <h3 class="font-[Poppins] text-xl mb-2">Grooming</h3>
+          <p class="font-[Open Sans] text-gray-700">Gentle baths, brushing, nail trims, and spa-ready finishes.</p>
+        </article>
+        <article class="bg-white rounded-lg shadow p-6 hover:shadow-xl transition-all duration-300">
+          <div class="text-4xl mb-3" aria-label="Daycare">🏡</div>
+          <h3 class="font-[Poppins] text-xl mb-2">Daycare</h3>
+          <p class="font-[Open Sans] text-gray-700">Engaging enrichment activities in a safe, supervised space.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-semibold text-lg mb-2 font-[Poppins]">Paws & Tails Dog Care</h4>
+        <p class="text-gray-300">Compassionate care for dogs of all breeds and ages.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2 font-[Poppins]">Contact</h4>
+        <p class="text-sm text-gray-300">123 Bark Street, Dog City</p>
+        <p class="text-sm text-gray-300">(555) 555-0123</p>
+        <p class="text-sm text-gray-300">hello@pawstails.example</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2 font-[Poppins]">Hours</h4>
+        <p class="text-sm text-gray-300">Mon-Fri: 7:00 AM - 7:00 PM</p>
+        <p class="text-sm text-gray-300">Sat: 9:00 AM - 4:00 PM</p>
+        <p class="text-sm text-gray-300">Sun: Closed</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-lg mb-2 font-[Poppins]">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="services.html" class="text-gray-300 hover:text-yellow-400">Our Services</a></li>
+          <li><a href="about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+          <li><a href="contact.html" class="text-gray-300 hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 py-4 text-center text-gray-400 text-sm">© 2025 Paws & Tails. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const btn = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+      }
+      // Simple fade-in on load for sections and cards
+      document.querySelectorAll('section, article, footer').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(12px)';
+        el.style.transition = 'opacity 600ms ease-out, transform 600ms ease-out';
+        requestAnimationFrame(() => {
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+      });
+      // Smooth internal link scrolling (optional enhancement)
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = this.getAttribute('href');
+          if (target && document.querySelector(target)) {
+            e.preventDefault();
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
